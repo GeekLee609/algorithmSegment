@@ -30,6 +30,7 @@
 - (void)listOperate {
     
     pNode pHead1 = (pNode)malloc(sizeof(pNode));
+    pHead1->nextNode = NULL;
     //  链表尾部插入节点
     insertLsitNode(pHead1, 1);
     insertLsitNode(pHead1, 3);
@@ -37,6 +38,7 @@
     insertLsitNode(pHead1, 7);
     
     pNode pHead2 = (pNode)malloc(sizeof(pNode));
+    pHead2->nextNode = NULL;
     insertLsitNode(pHead2, 9);
     insertLsitNode(pHead2, 2);
     insertLsitNode(pHead2, 3);

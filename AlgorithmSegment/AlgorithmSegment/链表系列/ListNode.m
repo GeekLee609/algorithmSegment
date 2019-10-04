@@ -15,10 +15,11 @@ void insertLsitNode(pNode pHead, int value) {
     //  生成一个链表节点
     pNode node = (pNode)malloc(sizeof(pNode));
     node->nodeValue = value;
+    node->nextNode = NULL;
     
     //  如果头节点是 NULL 的话
     if (p == NULL) {
-        pHead = node;;
+        pHead = node;
     }
     
     //  遍历链表直接插入到尾部
