@@ -7,6 +7,7 @@
 #import "ViewController.h"
 #import "GLAlgorithmManager.h"
 #import "ListNode.h"
+#import "BinaryTreeNode.h"
 
 @interface ViewController ()
 
@@ -23,6 +24,18 @@
     
     NSLog(@"最初的位置是%zd",ii);
     [self listOperate];
+    
+    int s1[] = {1,2,4,7,3,5,6,8};
+    int s2[] = {4,7,2,1,5,3,8,6};
+    
+//    int s3[] = {5,7,6,9,11,10,8};
+    int s3[] = {7,4,6,5};
+    bool kk = VerifySquenceOfBST(s3, 4);
+    
+    
+    
+    binaryTreeNode treeNode = ContructBinaryTree(s1, s2, 8);
+    
     
 }
 
